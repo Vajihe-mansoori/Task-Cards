@@ -10,7 +10,7 @@ export default function Nav() {
           </button>
         </Link>{" "}
         <div className="search">
-          <input type="text" placeholder="Search" />
+          <input className="search-input" type="text" placeholder="Search" />
         </div>
       </div>
       <hr style={{ color: "cyan" }} />
