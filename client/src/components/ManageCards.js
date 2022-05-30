@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import { updateCard } from "../api/cardApi";
 
@@ -27,8 +26,8 @@ export default function ManageCard() {
 
   return (
     <>
-      <h1>Add Task</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="taskForm" onSubmit={handleSubmit}>
+        <h1>Edit Task</h1>
         <div>
           <label htmlFor="title">Card Title</label>
           <input
@@ -62,7 +61,9 @@ export default function ManageCard() {
             }
           />
         </div>
-        <Button type="submit">Submit</Button>
+        <button className="btnSubmit" type="submit">
+          Submit
+        </button>
       </form>
     </>
   );

@@ -27,7 +27,11 @@ const CardList = ({ cardData }) => {
                     <Link to={`/card/${_id}`} state={card}>
                       Edit Task
                     </Link>
-                    <button variant="danger" onClick={() => handleDelete(_id)}>
+                    <button
+                      className="btnSubmit"
+                      variant="danger"
+                      onClick={() => handleDelete(_id)}
+                    >
                       Delete
                     </button>
                   </div>

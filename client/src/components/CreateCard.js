@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+
 // import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { createCard } from "../api/cardApi";
@@ -27,9 +27,8 @@ export default function CreateCard() {
 
   return (
     <>
-      <h1>Create Card Page</h1>
-
-      <form onSubmit={handleSubmit}>
+      <form className="taskForm" onSubmit={handleSubmit}>
+        <h1>Create Card Page</h1>
         <div>
           <label htmlFor="title">Task Title</label>
           <input
@@ -67,7 +66,9 @@ export default function CreateCard() {
           />
         </div>
 
-        <Button type="submit">Submit</Button>
+        <button className="btnSubmit" type="submit">
+          Submit
+        </button>
       </form>
     </>
   );

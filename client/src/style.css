@@ -28,12 +28,19 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.btnAdd {
+.btnAdd,
+.btnSubmit {
   width: 150px;
-  height: 30px;
-  border: 2px solid #6afcf4;
+  height: 35px;
+  border: 3px solid #6afcf4;
   background: none;
   color: #6afcf4;
+  border-radius: 4rem;
+}
+.btnAdd:hover,
+.btnSubmit:hover {
+  background: #6afcf4;
+  color: #02021a;
 }
 .search {
   max-width: 240px;
@@ -54,10 +61,7 @@ body {
   background: transparent;
   font-size: 0.8rem;
 }
-.btnAdd:hover {
-  background: #6afcf4;
-  color: #02021a;
-}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -102,4 +106,35 @@ body {
   text-align: center;
   border-radius: 4px;
   transform: rotateY(100deg);
+}
+.taskForm {
+  width: 400px;
+  text-align: center;
+  background: #2d2e37;
+  margin-left: 32%;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 30px;
+}
+.taskForm div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.taskForm input {
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+}
+.taskForm label {
+  color: white;
+  font-size: large;
+}
+.taskForm h1 {
+  color: white;
+}
+.btnSubmit {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
