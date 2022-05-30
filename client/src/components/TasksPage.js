@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import CardList from "./cardList";
 import axios from "axios";
 import Nav from "./Nav";
 const TaskPage = () => {
-  const navigate = useNavigate();
   const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
@@ -17,7 +14,6 @@ const TaskPage = () => {
   return (
     <>
       <Nav />
-      <Button onClick={() => navigate("/create-card")}>Create Task</Button>
       <CardList cardData={cardData} />
     </>
   );

@@ -5,9 +5,8 @@ export default function Nav() {
   return (
     <>
       <div className="navbar">
-        <button style={{ color: "black" }}>Add Task</button>
         <Link to={"/create-card"}>
-          <Button variant="outline-light">Light</Button>{" "}
+          <Button variant="outline-light">Create Task</Button>{" "}
         </Link>{" "}
         <div className="search">
           <input type="text" placeholder="Search" />
