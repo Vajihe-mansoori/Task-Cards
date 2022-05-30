@@ -1,0 +1,86 @@
+/* * {
+  color: white;
+} */
+body {
+  background: #02021a;
+}
+
+.bg-circle1 {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 200px;
+  width: 200px;
+  background: rgb(0, 255, 255);
+  filter: blur(140px);
+}
+.bg-circle2 {
+  position: fixed;
+  bottom: 100px;
+  right: 250px;
+  height: 200px;
+  width: 200px;
+  background: rgb(183, 0, 255);
+  filter: blur(150px);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btnAdd {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #6afcf4;
+  background: none;
+  color: #6afcf4;
+}
+.btnAdd:hover {
+  background: #6afcf4;
+  color: #02021a;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  margin-top: 20px;
+}
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.thecard:hover {
+  transform: rotateY(100deg);
+}
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #6afcf4;
+  text-align: center;
+  border-radius: 4px;
+}
+.thefront img {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgb(143, 167, 165);
+  text-align: center;
+  border-radius: 4px;
+  transform: rotateY(100deg);
+}
