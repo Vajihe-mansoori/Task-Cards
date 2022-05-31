@@ -17,23 +17,23 @@ const CardList = ({ cardData }) => {
             return (
               <div key={_id} className="maincontainer">
                 <div className="thecard">
-                  <div className="thefront">
+                  <div className="detailCard">
                     <img src="../task.png" alt="task" />
                     <h3>{title}</h3>
                     <p>{task}</p>
                     <p>{time}</p>
                   </div>
-                  <div className="theback">
+                  <div className="btnBox">
                     <Link to={`/card/${_id}`} state={card}>
-                      Edit Task
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
                     </Link>
-                    <button
-                      className="btnSubmit"
-                      variant="danger"
+
+                    <i
+                      class="fa fa-trash"
+                      aria-hidden="true"
                       onClick={() => handleDelete(_id)}
-                    >
-                      Delete
-                    </button>
+                    ></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>

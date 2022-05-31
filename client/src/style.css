@@ -78,34 +78,25 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-}
-.thecard:hover {
-  transform: rotateY(100deg);
-}
-.thefront {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
   background: #6afcf4;
   text-align: center;
   border-radius: 4px;
 }
-.thefront img {
-  margin-top: 40px;
+
+.detailCard img {
+  margin-top: 30px;
   margin-bottom: 20px;
 }
-.theback {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background: rgb(172, 48, 221);
-  text-align: center;
-  border-radius: 4px;
-  transform: rotateY(100deg);
+.btnBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btnBox i {
+  cursor: pointer;
+}
+.btnBox i:hover {
+  color: rgb(183, 0, 255);
 }
 .taskForm {
   width: 400px;
